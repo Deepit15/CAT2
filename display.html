@@ -1,7 +1,26 @@
 <html>
     <head>
+        <style>
+            body {
+             background-color: black;
+             overflow-x: hidden;
+            }
+             th, td {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px
+                }
+                th {
+            color:#ec167f;
+        }
+        td {
+            color: white;
+        }
+        </style>
         <script>
             function loadXMLDoc() {
+               // alert("in");
                 if(window.XMLHttpRequest)
                 {
                     xhttp=new XMLHttpRequest();
@@ -12,25 +31,25 @@
                 xhttp.open("GET","details.xml",false);
                 xhttp.send();
                xmlDoc =  xhttp.responseXML;
-               Details();
+               details();
             }
             
-            function Details() {
+            function details() {
                 var i;
                 var table =
-                    `<tr><th>Student_NAme</th><th>University_Name</th>
+                    `<tr><th>Student Name</th><th>University Name</th>
                     </tr>`;
                     
-                var x = xmlDoc.getElementsByTagName("COMPUTERSCIENCE");
+                var x = xmlDoc.getElementsByTagName("COMPUTER-SCIENCE");
                 
       
                 // Start to fetch the data by using TagName 
                 for (i = 0; i < x.length; i++) {
                     // s_no = i+1;
                     table += "<tr><td>" + 
-                        x[i].getElementsByTagName("STUNAME")[0]
+                        x[i].getElementsByTagName("STU-NAME")[0]
                         .childNodes[0].nodeValue + "</td><td>" +
-                        x[i].getElementsByTagName("STUUNIVERSITY")[0]
+                        x[i].getElementsByTagName("STU-UNIVERSITY")[0]
                         .childNodes[0].nodeValue + "</td><td>" 
     
                 }
@@ -40,8 +59,10 @@
             }
             </script>
     </head>
-    <body>
-        <table id="id">
+    <body onload="loadXMLDoc()">
+        <center><H1 style="color:#ec167f; ">“TECHNOVID”</H1></center>
+        <center><H2 style="color:white; ">Registration List</H2></center>
+        <table id="id" style=" border-width:3; border-color: wheat;">
             
         </table>
 
