@@ -215,7 +215,7 @@
 
 		  
 							<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-							  <button type="submit" class="btn btn-primary btn-lg">Register</button>&nbsp;
+							  <button type="submit" id="reg" class="btn btn-primary btn-lg">Register</button>&nbsp;
                               <button type="reset" class="btn btn-primary btn-lg">Reset</button>
 							</div>
 		  
@@ -275,6 +275,7 @@
         document.getElementById("branch").disabled = false;
         document.getElementById("state").disabled = false;
         document.getElementById("address").disabled = false;
+        document.getElementById("reg").disabled = false;
       un=1;
 	  } 
 	  else if(university.value.trim()==''){
@@ -289,6 +290,7 @@
         document.getElementById("branch").disabled = true;
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
+        document.getElementById("reg").disabled = true;
         un=0;
 	  }
 	  else {
@@ -303,6 +305,7 @@
         document.getElementById("branch").disabled = true;
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
+        document.getElementById("reg").disabled = true;
         un=0;
 	  }
   }
@@ -326,6 +329,7 @@
         document.getElementById("branch").disabled = false;
         document.getElementById("state").disabled = false;
         document.getElementById("username").disabled = false;
+        document.getElementById("reg").disabled = false;
       d=1;
 	  } 
 	  else if(university.value.trim()==''){
@@ -339,6 +343,7 @@
         document.getElementById("university").disabled = true;
         document.getElementById("branch").disabled = true;
         document.getElementById("state").disabled = true;
+        document.getElementById("reg").disabled = true;
         document.getElementById("username").disabled = true;
         d=0; 
 	  }
@@ -354,6 +359,7 @@
         document.getElementById("branch").disabled = true;
         document.getElementById("state").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         d=0;
 	  }
   }
@@ -376,6 +382,7 @@
         document.getElementById("branch").disabled = false;
         document.getElementById("address").disabled = false;
         document.getElementById("username").disabled = false;
+        document.getElementById("reg").disabled = false;
       s=1;
 	  } 
 	  else if(university.value.trim()==''){
@@ -390,6 +397,7 @@
         document.getElementById("branch").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         s=0;
 	  }
 	  else {
@@ -404,6 +412,7 @@
         document.getElementById("branch").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         s=0;
 	  }
   }
@@ -426,6 +435,7 @@
         document.getElementById("state").disabled = false;
         document.getElementById("address").disabled = false;
         document.getElementById("username").disabled = false;
+        document.getElementById("reg").disabled = false;
       u=1;
 	  } 
 	  else if(university.value.trim()==''){
@@ -439,6 +449,7 @@
         document.getElementById("branch").disabled = true;
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
+        document.getElementById("reg").disabled = true;
         document.getElementById("username").disabled = true;
         u=0;
 	  }
@@ -453,6 +464,7 @@
         document.getElementById("branch").disabled = true;
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
+        document.getElementById("reg").disabled = true;
         document.getElementById("username").disabled = true;
         u=0; 
 	  }
@@ -477,6 +489,7 @@
         document.getElementById("state").disabled = false;
         document.getElementById("address").disabled = false;
         document.getElementById("username").disabled = false;
+        document.getElementById("reg").disabled = false;
       b=1;
 	  } 
 	  else if(email.value.trim()==''){
@@ -491,6 +504,7 @@
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         b=0;
 	  }
 	  else {
@@ -505,6 +519,7 @@
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         b=0;
 	  }
   }
@@ -607,6 +622,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = false;
         document.getElementById("address").disabled = false;
         document.getElementById("username").disabled = false;
+        document.getElementById("reg").disabled = false;
         f=1;
 	  } 
 	  else if(fname.value.trim()==''){
@@ -621,6 +637,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         f=0;
         
 	  }
@@ -636,6 +653,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         f=0;
 	  }
 	}
@@ -653,6 +671,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = false;
         document.getElementById("address").disabled = false;
         document.getElementById("username").disabled = false;
+        document.getElementById("reg").disabled = false;
         a=1;
 	  } 
 	  else if(age.value.trim()==''){
@@ -667,6 +686,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         a=0;
 	  }
 	  else {
@@ -681,6 +701,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         a=0;
 	  }
 	}
@@ -711,6 +732,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = false;
         document.getElementById("address").disabled = false;
         document.getElementById("username").disabled = false;
+        document.getElementById("reg").disabled = false;
         p=1;
      // strength.style.display = 'block'
         } else if(pswd.value.match(mediumPassword)){
@@ -728,6 +750,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         p=0;
         } else{
           mstrength.classList.remove("valid");
@@ -744,6 +767,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
         p=0;
         }
 
@@ -849,6 +873,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = false;
         document.getElementById("address").disabled = false;
         document.getElementById("username").disabled = false;
+        document.getElementById("reg").disabled = false;
 	  } 
 	  else if(number.value.trim()==''){
 		document.getElementById("mnumber").innerText = "* Required field";
@@ -862,6 +887,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
 	  }
 	  else {
 		document.getElementById("mnumber").innerText = "Invalid Phone Number";
@@ -875,6 +901,7 @@ pswd.onblur = function() {
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
 	  }
 	}
     
@@ -896,6 +923,7 @@ email.onkeyup = function() {
         document.getElementById("state").disabled = false;
         document.getElementById("address").disabled = false;
         document.getElementById("username").disabled = false;
+        document.getElementById("reg").disabled = false;
       e=1;
 	  } 
 	  else if(email.value.trim()==''){
@@ -910,6 +938,7 @@ email.onkeyup = function() {
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
 	  }
 	  else {
         document.getElementById("memail").innerText = "InValid Email";
@@ -923,6 +952,7 @@ email.onkeyup = function() {
         document.getElementById("state").disabled = true;
         document.getElementById("address").disabled = true;
         document.getElementById("username").disabled = true;
+        document.getElementById("reg").disabled = true;
 	  }
   }
 
