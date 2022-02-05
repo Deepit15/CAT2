@@ -659,7 +659,7 @@ pswd.onblur = function() {
 	}
 	age.onkeydown = function() {
 	//   const reg = /^[0-9]{1,}$/;
-	  if ((age.value>0)) {
+	  if ((age.value>0)&&(age.value<100)) {
 		document.getElementById("mage").innerText = "Your age is Valid";
 		document.getElementById("mage").style.color = "lime";
         document.getElementById("fname").disabled = false;
